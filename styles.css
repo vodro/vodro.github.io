@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  color-scheme: light;
+  --paper: #f5f4f0;
+  --ink: #1d2925;
+  --muted: #68716a;
+  --accent: #c1e86c;
+  --line: #dedfd8;
+  --mono: "DM Mono", "SFMono-Regular", Consolas, monospace;
+  --sans: "Manrope", "Avenir Next", Avenir, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8.3%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 5px;
+}
+
+.site-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+}
+
+.wordmark span {
+  color: #87ae3d;
+}
+
+nav {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+nav a,
+footer a {
+  transition: color 160ms ease;
+}
+
+nav a:hover,
+footer a:hover {
+  color: #67872e;
+}
+
+.hero {
+  min-height: 570px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow,
+.section-label {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #89ae43;
+  box-shadow: 0 0 0 4px rgb(137 174 67 / 15%);
+}
+
+h1 {
+  z-index: 1;
+  margin: 1.3rem 0 0;
+  font-size: clamp(4rem, 9.5vw, 8.7rem);
+  font-weight: 600;
+  letter-spacing: -0.095em;
+  line-height: 0.98;
+}
+
+h1 span {
+  color: #789a3e;
+}
+
+.hero-copy {
+  z-index: 1;
+  max-width: 480px;
+  margin: 1.8rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.text-link {
+  z-index: 1;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--ink);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.text-link span {
+  margin-left: 0.7rem;
+}
+
+.hero-mark {
+  position: absolute;
+  right: -0.04em;
+  bottom: -0.47em;
+  color: rgb(29 41 37 / 3.5%);
+  font-size: clamp(24rem, 53vw, 46rem);
+  font-weight: 800;
+  letter-spacing: -0.14em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-label {
+  padding-top: 0.5rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+  letter-spacing: -0.07em;
+  line-height: 1.12;
+}
+
+.about > div > p {
+  max-width: 520px;
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.elsewhere {
+  padding: 4.5rem 0;
+}
+
+.elsewhere h2 {
+  margin-bottom: 1.6rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7rem 0 2.2rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 0 7%;
+  }
+
+  .site-header {
+    height: 76px;
+  }
+
+  nav {
+    gap: 1.3rem;
+    font-size: 0.75rem;
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero-copy {
+    max-width: 360px;
+    font-size: 0.9rem;
+  }
+
+  .hero-mark {
+    right: -0.1em;
+    bottom: -0.23em;
+    font-size: 27rem;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 4rem 0;
+  }
+
+  .section-label {
+    padding-top: 0;
+  }
+
+  .elsewhere {
+    padding: 3.5rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
