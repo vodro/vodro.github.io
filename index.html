@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kowshic Roy</title>
+<meta name="description" content="Kowshic Roy, Lecturer in CSE at BUET. Research interests: efficient ML systems, Mixture-of-Experts, AI accelerators, operating and database systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fdfdfb;
+    --text: #1f2328;
+    --muted: #5b6370;
+    --accent: #1d4ed8;
+    --rule: #e3e5e8;
+    --chip: #eef2fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171a;
+      --text: #e6e8eb;
+      --muted: #9aa3ae;
+      --accent: #7aa2ff;
+      --rule: #2b2f35;
+      --chip: #1f2633;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 "Source Sans 3", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 72px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1, h2 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; }
+  h1 { font-size: 2.3rem; line-height: 1.15; margin: 0 0 4px; }
+  h2 {
+    font-size: 1.3rem; margin: 44px 0 14px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.02rem; margin: 0; font-weight: 700; }
+  p { margin: 0 0 12px; }
+  .role { color: var(--muted); margin: 0 0 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0; padding: 0; list-style: none; font-weight: 600; }
+  .note {
+    margin-top: 22px; padding: 12px 16px; border-radius: 8px;
+    background: var(--chip); font-size: 0.98rem;
+  }
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  .pub { margin-bottom: 16px; }
+  .pub .title { font-weight: 600; }
+  .pub .venue { font-style: italic; }
+  .pub .meta, .entry .meta { color: var(--muted); font-size: 0.95rem; }
+  .me { font-weight: 700; }
+  .entry { margin-bottom: 22px; }
+  .entry-head { display: flex; justify-content: space-between; gap: 4px 16px; flex-wrap: wrap; }
+  .entry-head .when { color: var(--muted); font-size: 0.95rem; white-space: nowrap; }
+  .entry ul, .bullets { margin: 6px 0 0; padding-left: 20px; }
+  .entry li, .bullets li { margin-bottom: 4px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; padding: 0; list-style: none; }
+  .tags li { background: var(--chip); border-radius: 999px; padding: 2px 12px; font-size: 0.92rem; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; }
+  @media (max-width: 520px) {
+    main { padding: 36px 16px 56px; }
+    h1 { font-size: 1.9rem; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Kowshic Roy</h1>
+  <p class="role">Lecturer, Department of Computer Science and Engineering<br>
+     Bangladesh University of Engineering and Technology (BUET), Dhaka</p>
+  <ul class="links">
+    <li><a href="Kowshic_Roy_CV.pdf">CV (PDF)</a></li>
+    <li><a href="mailto:kowshic@cse.buet.ac.bd">kowshic@cse.buet.ac.bd</a></li>
+    <li><a href="https://scholar.google.com/citations?user=z9YDPhgAAAAJ&amp;hl=en">Google Scholar</a></li>
+    <li><a href="https://github.com/vodro">GitHub</a></li>
+    <li><a href="https://cse.buet.ac.bd/faculty/faculty_detail/kowshic">BUET profile</a></li>
+  </ul>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>I am a Lecturer in CSE at BUET, where I teach operating systems and database systems, and an M.Sc. student advised by Sukarna Barua. I received my B.Sc. in CSE from BUET in 2023, graduating 2nd of 129 with a CGPA of 3.98/4.00.</p>
+  <p>My recent research looks at where energy goes when large models run on AI accelerators. Modeling TPU-class NPUs showed me that compute dominates energy, but memory (SRAM and HBM) takes a larger share than expected, and that hardware-side savings depend on how the model itself computes. I now want to work on efficient machine learning across the stack, from model architecture down to the hardware.</p>
+  <p class="note"><strong>I am applying to Ph.D. programs in Computer Science and Computer Engineering for Fall 2027.</strong></p>
+</section>
+
+<section>
+  <h2>Research interests</h2>
+  <ul class="tags">
+    <li>Efficient ML systems</li>
+    <li>Mixture-of-Experts and conditional computation</li>
+    <li>Modeling and optimizing AI accelerators (NPUs / GPUs)</li>
+    <li>Energy-efficient training and inference</li>
+    <li>Operating systems and memory management</li>
+    <li>Database storage engines (LSM trees, caching)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Publications</h2>
+  <ul class="plain">
+    <li class="pub">
+      <div class="title">A Look at the Isotropy of Pretrained Protein Language Models</div>
+      <div>Sheikh Azizul Hakim, <span class="me">Kowshic Roy</span>, M. Saifur Rahman</div>
+      <div class="meta"><span class="venue">ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences</span>, 2025 &middot; <a href="https://arxiv.org/abs/2510.10655">arXiv:2510.10655</a></div>
+    </li>
+    <li class="pub">
+      <div class="title">Terraces in species tree inference from gene trees</div>
+      <div>Mursalin Habib, <span class="me">Kowshic Roy</span>, Saem Hasan, Atif Hasan, Md. Shamsuzzoha Bayzid</div>
+      <div class="meta"><span class="venue">BMC Ecology and Evolution</span> 24, 135, 2024 &middot; <a href="https://doi.org/10.1186/s12862-024-02309-z">paper</a></div>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Research projects</h2>
+
+  <div class="entry">
+    <div class="entry-head"><h3>AstraWattch: energy modeling for TPU-class accelerators</h3><span class="when">Mar 2026 – Sep 2026</span></div>
+    <div class="meta">Collaborative project, remote</div>
+    <ul>
+      <li>Modeled the energy use of ML workloads on TPU-class NPUs by combining ASTRA-sim, STAGE (compute requirements of each workload) and ReGate (NPU power gating, MICRO 2025).</li>
+      <li>Found that compute dominates energy use, but on-chip SRAM and off-chip HBM account for a surprisingly large share.</li>
+      <li>Showed that ReGate misses power-gating opportunities in Mixture-of-Experts inference. Capturing them needed only small changes to ReGate, so we judged it too incremental to pursue.</li>
+      <li>On hold: TPUs expose no public power-measurement interface, so the models could not be validated against real hardware.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><h3>Isotropy of pretrained protein language models</h3><span class="when">Jul 2023 – Dec 2023</span></div>
+    <div class="meta">BUET, with Dr. M. Saifur Rahman</div>
+    <ul>
+      <li>Analyzed how evenly the embeddings of pretrained protein language models spread across the embedding space. Published at an ICML 2025 workshop.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><h3>Explainable GNNs for breast cancer gene expression</h3><span class="when">Mar 2024 – May 2025</span></div>
+    <div class="meta">BUET</div>
+    <ul>
+      <li>Used graph neural networks and GNN explainers (BetaExplainer) to find informative gene pairs in a 508-patient breast cancer cohort.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><h3>ML-based test-case generation</h3><span class="when">Jun 2023 – Dec 2023</span></div>
+    <div class="meta">Research Assistant, Samsung R&amp;D Institute Bangladesh and BUET</div>
+    <ul>
+      <li>Developed an ML-based framework that automatically creates software test cases, working with industry engineers.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><h3>Terraces in species tree inference (B.Sc. thesis)</h3><span class="when">2022 – 2023</span></div>
+    <div class="meta">BUET, advised by Prof. Md. Shamsuzzoha Bayzid</div>
+    <ul>
+      <li>Studied terraces: sets of species trees that the gene-tree data cannot tell apart. Ran the experiments and analyses on a very large dataset using an algorithm that avoided heavy computation. Published in <i>BMC Ecology and Evolution</i> (2024).</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Teaching</h2>
+  <p>Lecturer, Department of CSE, BUET (May 2023 – present)</p>
+  <ul class="bullets">
+    <li><strong>CSE 314 Operating Systems Sessional:</strong> kernel labs on xv6 (copy-on-write, lazy page allocation, MLFQ scheduling).</li>
+    <li><strong>CSE 313 Operating Systems:</strong> process synchronization, virtual memory, file systems.</li>
+    <li><strong>CSE 215 Database Systems:</strong> storage-engine internals, including LSM trees, B+ tree indexing and I/O optimization.</li>
+    <li><strong>CSE 409 Computer Graphics:</strong> the 3D rasterization pipeline, hidden-surface removal, shading and ray tracing.</li>
+    <li><strong>Applied Machine Learning</strong> (Information Access Center, BUET, 2024 – present): end-to-end ML pipelines with PyTorch and scikit-learn.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Honors</h2>
+  <ul class="bullets">
+    <li>First place in the BUET undergraduate admission test, 2017 (about 12,000 candidates).</li>
+    <li>Dean's List in every graded term of the B.Sc., 2018 – 2023.</li>
+    <li>Graduated 2nd of 129 in B.Sc. CSE, BUET, 2023.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>References</h2>
+  <ul class="bullets">
+    <li><strong>Dr. Md. Shamsuzzoha Bayzid</strong>, Professor, Dept. of CSE, BUET (B.Sc. thesis supervisor)</li>
+    <li><strong>Sukarna Barua</strong>, Associate Professor, Dept. of CSE, BUET (M.Sc. supervisor)</li>
+    <li><strong>Dr. Mohammad Saifur Rahman</strong>, Professor, Dept. of CSE, BUET (co-author)</li>
+  </ul>
+</section>
+
+<footer>Last updated November 2026.</footer>
+
+</main>
+</body>
+</html>
