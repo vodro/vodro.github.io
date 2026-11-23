@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kowshic Roy</title>
-<meta name="description" content="Kowshic Roy, Lecturer in CSE at BUET. Research interests: efficient ML systems, Mixture-of-Experts, AI accelerators, operating and database systems.">
+<meta name="description" content="Kowshic Roy, Lecturer in CSE at BUET. Research interests: systems for ML, Mixture-of-Experts models, and operating and database systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
@@ -122,17 +122,16 @@
 <section>
   <h2>About</h2>
   <p>I am a Lecturer in CSE at BUET, where I teach operating systems and database systems, and an M.Sc. student advised by Sukarna Barua. I received my B.Sc. in CSE from BUET in 2023, graduating 2nd of 129 with a CGPA of 3.98/4.00.</p>
-  <p>My recent research looks at where energy goes when large models run on AI accelerators. Modeling TPU-class NPUs showed me that compute dominates energy, but memory (SRAM and HBM) takes a larger share than expected, and that hardware-side savings depend on how the model itself computes. I now want to work on efficient machine learning across the stack, from model architecture down to the hardware.</p>
+  <p>I work on efficient machine learning, from model design to running on real hardware. For my M.Sc. thesis I am studying Mixture-of-Experts models in vision, to understand how they behave and how their architecture can be improved under limited compute. Before that, I modeled the energy use of ML workloads on AI accelerators, and I built low-power embedded firmware at a startup.</p>
   <p class="note"><strong>I am applying to Ph.D. programs in Computer Science and Computer Engineering for Fall 2027.</strong></p>
 </section>
 
 <section>
   <h2>Research interests</h2>
   <ul class="tags">
-    <li>Efficient ML systems</li>
-    <li>Mixture-of-Experts and conditional computation</li>
-    <li>Modeling and optimizing AI accelerators (NPUs / GPUs)</li>
-    <li>Energy-efficient training and inference</li>
+    <li>Systems for ML</li>
+    <li>Efficient training and serving of large models</li>
+    <li>Mixture-of-Experts models</li>
     <li>Operating systems and memory management</li>
     <li>Database storage engines (LSM trees, caching)</li>
   </ul>
@@ -158,13 +157,20 @@
   <h2>Research projects</h2>
 
   <div class="entry">
+    <div class="entry-head"><h3>Mixture-of-Experts in vision models (M.Sc. thesis, in progress)</h3><span class="when">Aug 2026 – present</span></div>
+    <div class="meta">BUET, advised by Sukarna Barua</div>
+    <ul>
+      <li>Studying the behavior of Mixture-of-Experts vision models to find ways to improve their architecture under limited compute.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
     <div class="entry-head"><h3>AstraWattch: energy modeling for TPU-class accelerators</h3><span class="when">Mar 2026 – Sep 2026</span></div>
     <div class="meta">With Prof. Tanvir Ahmed Khan (Columbia University), remote</div>
     <ul>
       <li>Modeled the energy use of ML workloads on TPU-class NPUs by combining ASTRA-sim, STAGE (compute requirements of each workload) and ReGate (NPU power gating, MICRO 2025).</li>
       <li>Found that compute dominates energy use, but on-chip SRAM and off-chip HBM account for a surprisingly large share.</li>
-      <li>Showed that ReGate misses power-gating opportunities in Mixture-of-Experts inference. Capturing them needed only small changes to ReGate, so we judged it too incremental to pursue.</li>
-      <li>On hold: TPUs expose no public power-measurement interface, so the models could not be validated against real hardware.</li>
+      <li>Showed that ReGate misses power-gating opportunities in Mixture-of-Experts inference.</li>
     </ul>
   </div>
 
@@ -197,6 +203,19 @@
     <div class="meta">BUET, advised by Prof. Md. Shamsuzzoha Bayzid</div>
     <ul>
       <li>Studied terraces: sets of species trees that the gene-tree data cannot tell apart. Ran the experiments and analyses on a very large dataset using an algorithm that avoided heavy computation. Published in <i>BMC Ecology and Evolution</i> (2024) as joint first author.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Industry experience</h2>
+
+  <div class="entry">
+    <div class="entry-head"><h3>Limbics AI</h3><span class="when">Feb 2025 – Sep 2026</span></div>
+    <div class="meta">Embedded systems developer, part-time (startup; AI for infrastructure monitoring)</div>
+    <ul>
+      <li>Designed the architecture and wrote the firmware for battery-powered IoT sensor nodes on ESP32, using ESP-IDF and FreeRTOS, with ICM-20948 9-axis motion sensors.</li>
+      <li>Built and modified the LoRa communication stack (Semtech SX1276) to work within a tight battery budget, cutting power consumption by about 12 times.</li>
     </ul>
   </div>
 </section>
